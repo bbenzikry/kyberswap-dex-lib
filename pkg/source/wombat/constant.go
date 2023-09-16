@@ -1,9 +1,8 @@
 package wombat
 
-import "math/big"
+const (
+	DexTypeWombat = "wombat"
 
-var (
-	DefaultGas = Gas{Swap: 125000}
-	WAD        = big.NewInt(1e18)
-	WADI       = big.NewInt(1e18)
+	poolTypeWombatLSD = "wombat-lsd"
+	poolTypeMain      = "wombat-main"
 )
