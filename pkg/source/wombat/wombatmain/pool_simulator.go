@@ -20,7 +20,7 @@ type PoolSimulator struct {
 }
 
 func NewPoolSimulator(entityPool entity.Pool) (*PoolSimulator, error) {
-	var extra wombat.ExtraMain
+	var extra wombat.Extra
 	if err := json.Unmarshal([]byte(entityPool.Extra), &extra); err != nil {
 		return nil, err
 	}
